@@ -5,5 +5,6 @@ A Light Dependent Resistor (LDR) is a semiconductor that changes its electrical 
 ![image](images/ldr_1.png)
 
 Its applications include smoke detection, automatic lighting control, batch counting and burglar alarm systems.  
+jkjk
 
 
