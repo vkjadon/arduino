@@ -2,7 +2,7 @@
     <html>
     <head>
         <meta charset="UTF-8">
-        <title>Controlling Brightness Using Light Emitting Diode &lpar;LDR&rpar;</title>
+        <title>Controlling Brightness Using Light Dependent Resistor &lpar;LDR&rpar;</title>
         <style>
 /* From extension vscode.github */
 /*---------------------------------------------------------------------------------------------
@@ -16,7 +16,8 @@
 }
 
 </style>
-        
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex/dist/katex.min.css">
+<link href="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.css" rel="stylesheet" type="text/css">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/markdown.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Microsoft/vscode/extensions/markdown-language-features/media/highlight.css">
 <style>
@@ -40,9 +41,11 @@
         
     </head>
     <body class="vscode-body vscode-light">
-        <h1 id="controlling-brightness-using-light-emitting-diode-ldr">Controlling Brightness Using Light Emitting Diode (LDR)</h1>
+        <h1 id="controlling-brightness-using-light-dependent-resistor-ldr">Controlling Brightness Using Light Dependent Resistor (LDR)</h1>
+<p>The Light Dependent Resister (LDR) is used to detect the intensity of light. This is because its resistance decreases with an increase in the light falling on it. So if we can measure the resistance of the LDR, we can estimate the intensity of the light. The is resitance is measured by measuring the potential drop across the LDR.<br>
+We will use potential divider circuit to measure the drop across the LDR. The LDR gives out an analog voltage, it is connected to the analog pin on the Arduino. The Arduino, with its built-in ADC (Analog to Digital Converter), converts the analog voltage (from 0-5V) into a digital value in the range of (0-1023) because the in-built Arduino ADC is 10 bits (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><msup><mn>2</mn><mn>10</mn></msup><mo>=</mo><mn>1024</mn></mrow><annotation encoding="application/x-tex">2^{10}=1024</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141em;"></span><span class="mord"><span class="mord">2</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">10</span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6444em;"></span><span class="mord">1024</span></span></span></span>). When there is sufficient light in its environment or on its surface, the converted digital values read from the LDR through the Arduino will be in the range of 900-1023.</p>
 
-        
+        <script async src="https://cdn.jsdelivr.net/npm/katex-copytex@latest/dist/katex-copytex.min.js"></script>
         
     </body>
     </html>
