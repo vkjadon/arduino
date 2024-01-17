@@ -1,4 +1,0 @@
-# Controlling Brightness Using Light Dependent Resistor (LDR)
-
-The Light Dependent Resister (LDR) is used to detect the intensity of light. This is because its resistance decreases with an increase in the light falling on it. So if we can measure the resistance of the LDR, we can estimate the intensity of the light. The is resitance is measured by measuring the potential drop across the LDR.   
-We will use potential divider circuit to measure the drop across the LDR. The LDR gives out an analog voltage, it is connected to the analog pin on the Arduino. The Arduino, with its built-in ADC (Analog to Digital Converter), converts the analog voltage (from 0-5V) into a digital value in the range of (0-1023) because the in-built Arduino ADC is 10 bits ($2^{10}=1024$). When there is sufficient light in its environment or on its surface, the converted digital values read from the LDR through the Arduino will be in the range of 900-1023.
